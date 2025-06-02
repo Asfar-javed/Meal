@@ -1,0 +1,3 @@
+[submodule "Meal-App-Frontend"]
+	path = Meal-App-Frontend
+	url = https://github.com/Asfar-javed/Meal-App-Frontend.git
