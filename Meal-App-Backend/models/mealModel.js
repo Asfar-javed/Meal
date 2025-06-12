@@ -39,6 +39,10 @@ const mealSchema = new mongoose.Schema({
     type: [String],
     required: true
   },
+  favorite: {
+    type: Boolean,
+    required: false
+  },
   createdAt: {
     type: Date,
     default: Date.now
