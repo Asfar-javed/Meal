@@ -86,6 +86,7 @@ export const getAllMeals = async (req, res) => {
   }
 };
 
+
 export const addMeal = async (req, res) => {
   try {
     const { title, category, duration, imageUrl, ingredients, steps } = req.body;
