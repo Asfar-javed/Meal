@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import mealRoutes from './routes/mealRoutes.js';
+import authRoutes from './routes/authRoutes.js'; 
 
 // Initialize app and middleware
 const app = express();
@@ -24,6 +25,7 @@ const connectDB = async () => {
 };
 
 app.use('/api', mealRoutes);
+app.use('/api/auth', authRoutes);
 
 // Routes
 app.get('/', (req, res) => res.send('API Running'));
